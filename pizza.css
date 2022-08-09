@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear; 
+}
+
+*::selection{
+    background: pink;
+    color: #fff;
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: white;
+}
+section{
+    padding: 10%;
+    text-align: center;
+    size: 100%;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+}
+
+header .logo i{
+    padding-right: 5rem;
+    color: red;
+}
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: red;
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: 1rem solid#666;
+    border-radius: 3rem;
+    padding: 5rem 1.5rem;
+    display: none;
+}
+.home {
+    font-size: 25px;
+    color: white;
+}
+.home .image{
+    flex-direction: column;
+    flex: 1 1 20rem;
+}
+.home .image img{
+    width: 300%;
+}
+.order {
+    color: white;
+    font-size: 25px;
+}
+.popular {
+    color: white;
+    font-size: 25px;
+    
+}
+.speciality {
+    font-size: 25px;
+    color: white;
+}
+.body {
+    background-image: url(./assets/saahil-khatkhate-kfDsMDyX1K0-unsplash.jpg);
+    background-size: 200rem;
+    background-repeat: no-repeat;
+}
+.content {
+    color: white;
+}
+.order {
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: 1rem solid rgba(0, 0, 0, 1);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: 2rem solid rgba(0, 0, 0, 1);
+        border-left: 5rem solid red;
+        background: #fff;
+    }
+}
+
+@media(max-width:400px){
+
+}
